@@ -1,0 +1,25 @@
+{
+    "name": "v-zkevm",
+    "version": "1.0.0",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+      "dev": "node --max-old-space-size=8192 --experimental-specifier-resolution=node --loader ts-node/esm ./start.ts"
+    },
+    "author": {
+      "name": "V",
+      "url": "https://t.me/viemcrypto"
+    },
+    "license": "ISC",
+    "devDependencies": {
+      "@types/js-yaml": "^4.0.6",
+      "@types/node": "^20.6.3",
+      "@types/node-fetch": "^2.6.4",
+      "ts-node": "^10.9.1",
+      "tslib": "^2.6.2"
+    },
+    "dependencies": {
+      "chalk": "^5.3.0",
+      "viem": "^1.15.1"
+    }
+  }
