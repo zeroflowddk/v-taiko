@@ -1,7 +1,8 @@
 export const taiko_addons = {
     bridge: false,  // бридж
     swap: false, // свапы 
-    nft: true, // нфт 
+    nft: false, // nft omnisea
+    minpad:true, // nft minpad
     smart_contracts: false // фабрика контрактов
 };
 

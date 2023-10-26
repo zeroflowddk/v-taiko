@@ -1,4 +1,4 @@
-import { bridgeHandler, swapHandler, nftTaiko, fabricContract } from "./helper/logic";
+import { bridgeHandler, swapHandler, nftTaiko, fabricContract, minPad } from "./helper/logic";
 import { taiko_addons, smart_fabric } from "./setting";
 
 if (taiko_addons.bridge) {
@@ -15,4 +15,8 @@ if (taiko_addons.nft) {
   
 if (taiko_addons.smart_contracts) {
     fabricContract(smart_fabric.number_contracts);
+};
+
+if (taiko_addons.minpad) {
+    minPad();
 };

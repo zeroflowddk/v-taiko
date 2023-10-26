@@ -7,6 +7,7 @@ import { random, sleep, readWallets, handlerPrivateKey } from "./helper";
 import { taikoContracts } from "./contracts";
 import { Hex } from "viem";
 import { taiko_swap, taiko_bridge, taiko_addons, smart_fabric } from "../setting";
+import { MinpadTaiko } from "../modules/mintpad";
 import chalk from "chalk";
 
 let privateKeys = readWallets('./private_key.txt')
@@ -69,3 +70,12 @@ export async function fabricContract(number:number){
     };
 }
 
+export async function minPad(){
+    console.log(chalk.bgCyan('Try mint Mintpad NFT Taiko'));
+    for (let privateKey of privateKeys){
+        const claim = new MinpadTaiko(handlerPrivateKey(privateKey));
+        const delay = random(taiko_swap.amount_in_procent_dex[0], taiko_swap.amount_in_procent_dex[1]);
+        claim.claimMinpad();
+        await sleep(delay * 1000);
+    };
+}

@@ -1802,3 +1802,62 @@ export const erc20 = [
     "type": "function"
   }
 ];
+
+export const minpadAbi = [
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "param1",
+        "type": "address"
+      },
+      {
+        "name": "param2",
+        "type": "uint256"
+      },
+      {
+        "name": "param3",
+        "type": "uint256"
+      },
+      {
+        "name": "param4",
+        "type": "address"
+      },
+      {
+        "name": "param5",
+        "type": "uint256"
+      },
+      {
+        "name": "param6",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "param7",
+            "type": "bytes32[]"
+          },
+          {
+            "name": "param8",
+            "type": "uint256"
+          },
+          {
+            "name": "param9",
+            "type": "uint256"
+          },
+          {
+            "name": "param10",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "name": "param11",
+        "type": "bytes"
+      }
+    ],
+    "name": "claim",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
